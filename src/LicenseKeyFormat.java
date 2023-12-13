@@ -2,7 +2,7 @@ public class LicenseKeyFormat {
     public static void main(String[] args) {
         System.out.println(LicenseKeyFormat.format("5F3Z-2e-9-w", 4L));
         System.out.println(LicenseKeyFormat.format("2-5g-3-J", 2L));
-        
+
         System.out.println(LicenseKeyFormat.format("5F3Z-2e-9-w", 3L));
         System.out.println(LicenseKeyFormat.format("5F3Z-2e-9-w", 5L));
         System.out.println(LicenseKeyFormat.format("2-5g-3-J", 3L));
@@ -28,6 +28,6 @@ public class LicenseKeyFormat {
             }
         }
 
-        return result.reverse().toString();
+        return result.reverse().toString().toUpperCase();
     }
 }
